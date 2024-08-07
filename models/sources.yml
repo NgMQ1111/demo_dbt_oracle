@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: src_supermarket
+    tables:
+      - name: SUPERMARKET
