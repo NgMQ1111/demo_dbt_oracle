@@ -1,13 +1,13 @@
 WITH sales_data AS (
     SELECT
         sale_date,
-        product_id,
+        product_name,
         SUM(amount) as total_amount
     FROM
-        {{ ref('stg_supermarket') }}
+        supermarket
     GROUP BY
         sale_date,
-        product_id
+        product_name
 )
 SELECT
     *

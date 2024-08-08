@@ -2,5 +2,6 @@ version: 2
 
 sources:
   - name: src_supermarket
+    schema: SEMARCHY_CUSTOMER_B2C_MDM
     tables:
-      - name: SUPERMARKET
+      - name: supermarket

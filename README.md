@@ -6,6 +6,23 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+Cấu hình file profiles.yml:
+
+<project_name>:
+  outputs:
+    dev:
+      database: <SERVICE_NAME>
+      host: <YOUR_HOST>
+      pass: <PASSWORD>
+      port: <YOUR_PORT>
+      protocol: tcp
+      schema: <USERNAME>
+      service: <SERVICE_NAME>
+      threads: 4
+      type: oracle
+      user: <USERNAME>
+  target: dev <default - dev>
+
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
